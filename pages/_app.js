@@ -1,17 +1,22 @@
-import Layout from '../component/Layout';
 import { SessionProvider } from "next-auth/react"
 import '../styles/globals.css'
+import { ToastContainer } from "react-toastify";
+import store from "../Redux/store";
+import {Provider} from "react-redux";
+import 'react-toastify/dist/Reacttoastify.css';
 
-export default function MyApp({
-   Component, 
-   pageProps: { session, ...pageProps },
-   }) {
+
+function App({ Component, pageProps:{session, ...pageProps}, }) {
+
   return(
-    <SessionProvider session={session}>
-      <Layout>
-        <Component {...pageProps} />
-      </Layout>
-    </SessionProvider>
+    <Provider store={store} >
+      <SessionProvider session={session}>
+        <ToastContainer/>
+          <Component {...pageProps} />
+      </SessionProvider>
+    </Provider>
   
   );
 }
+
+export default App

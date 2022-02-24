@@ -5,12 +5,11 @@ import clientPromise from "../../../lib/mongodb"
 
 export default NextAuth({
   adapter:MongoDBAdapter(clientPromise),
-  // Configure one or more authentication providers
-  secret: process.env.SECRET,
+  secret: process.env.JWT_SECRET,
   providers: [
     GoogleProvider({
-      clientId: process.env.GOOGLE_CLIENT_ID,
-      clientSecret: process.env.GOOGLE_CLIENT_SECRET
+      clientId: process.env.GOOGLE_ID,
+      clientSecret: process.env.GOOGLE_SECRET,
     }),
   ],
 })
