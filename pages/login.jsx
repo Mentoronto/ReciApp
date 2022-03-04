@@ -42,8 +42,8 @@ const SubmitHandlerLogin = async(e)=>{
         },
       }
       
-      const {data} = await axios.post('/api/login', {email,password},config)
-      const res = await axios.post('/api/login', {email,password},config)
+      const {data} = await axios.post('https://recipe-app-ruddy.vercel.app/api/login', {email,password},config)
+      const res = await axios.post('https://recipe-app-ruddy.vercel.app/api/login', {email,password},config)
       res.status === (201) && router.push('/recipes/');
       
       toast.success(data.message)
