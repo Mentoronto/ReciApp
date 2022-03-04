@@ -11,7 +11,7 @@ import Image from 'next/image';
 import { parseCookies } from "nookies"
 import { toast } from "react-toastify";
 import { useSelector,useDispatch } from "react-redux";
-import { googleOn } from "../Redux/googleSlice";
+import { googleOn } from "./Redux/googleSlice";
 
 const Login = () => {
   const [email, setEmail] = useState('');
