@@ -14,7 +14,7 @@ const Register = ({setReg}) => {
 
     
     try{
-      const data= await axios.post('https://recipe-app-ruddy.vercel.app/api/register', {email,firstName,lastName,password},config);
+      const data= await axios.post('https://recipe-app-mentor.vercel.app/api/register', {email,firstName,lastName,password},config);
       data.status === (200) && setReg(false);
       const config = {
         headers:{

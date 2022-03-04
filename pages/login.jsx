@@ -42,8 +42,8 @@ const SubmitHandlerLogin = async(e)=>{
         },
       }
       // https://recipe-app-ruddy.vercel.app
-      const {data} = await axios.post('https://recipe-app-ruddy.vercel.app/api/login', {email,password},config);
-      const res = await axios.post('https://recipe-app-ruddy.vercel.app/api/login', {email,password},config);
+      const {data} = await axios.post('https://recipe-app-mentor.vercel.app/api/login', {email,password},config);
+      const res = await axios.post('https://recipe-app-mentor.vercel.app/api/login', {email,password},config);
       res.status === (201) && router.push('/recipes/');
       
       toast.success(data.message)
