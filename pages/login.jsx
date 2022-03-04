@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react'
 import axios from 'axios';
 import cookie from 'js-cookie';
 import styles from '../styles/Login.module.css'
-import Register from '../component/register';
+import Register from '../component/Register';
 import { useRouter } from 'next/router';
 import { useSession, signIn, getSession } from 'next-auth/react'
 import Image from 'next/image';

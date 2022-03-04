@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import styles from '../styles/Meal.module.css'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart,faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import Image from 'next/image';
 
 const Meal = (
   {
@@ -35,7 +36,7 @@ const{
             <span className={styles.random}>
                 Recipe of the Day
             </span>
-            <img className={styles.img} src={strMealThumb} alt=''></img>
+            <img className={styles.img} src={strMealThumb} />
           </div>
            <div className={styles.mealBody}>
             <h4>{strMeal}</h4>
