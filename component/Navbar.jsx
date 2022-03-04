@@ -5,7 +5,7 @@ import { useRouter } from 'next/router';
 import { toast } from "react-toastify";
 import { useEffect } from "react";
 import { useSelector,useDispatch } from "react-redux";
-import {googleOff} from "../Redux/googleSlice";
+import { googleOff } from "../Redux/googleSlice";
 
 export default function Navbar ({user}){  
   const router = useRouter();
