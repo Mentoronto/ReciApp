@@ -48,7 +48,6 @@ const Featured = () => {
        <p className={styles.desc}>Keep track of all your groceries and favorite recipes as they continue to 
        </p>
        <span className={`${styles.grow} ${Grw}`}>grow</span>
-       
        </div>
        <div className={styles.right}>
        <div className={styles.box}>
