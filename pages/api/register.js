@@ -2,7 +2,7 @@ import dbConnect from "../../lib/connectDB"
 import User from "../../models/userModel";
 import bcrypt from "bcryptjs";
 
-export default async(req,res)=>{
+export default async function handler(req,res){
 
   const {method}=req;
   await dbConnect()
