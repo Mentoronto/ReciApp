@@ -1,0 +1,237 @@
+.meals {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.meal {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin: 10px;
+  -webkit-box-shadow: 0px 0px 12px rgba(10, 10, 10, 0.4);
+          box-shadow: 0px 0px 12px rgba(10, 10, 10, 0.4);
+  border-radius: 3px;
+  overflow: hidden;
+  border: none;
+  margin: 1.1rem;
+}
+
+.mealContainer {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  -webkit-box-shadow: 0px 0px 12px rgba(10, 10, 10, 0.4);
+          box-shadow: 0px 0px 12px rgba(10, 10, 10, 0.4);
+  border-radius: 3px;
+  border: none;
+  margin: 1.9rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 3px;
+}
+
+.mealDescription {
+  height: 100%;
+  padding: 1.5rem;
+  margin: 1rem;
+  position: relative;
+}
+
+.randomMealHead {
+  font-weight: 600;
+  color: orange;
+}
+
+.mealInstructions {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.CategArea {
+  position: absolute;
+  bottom: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.CategArea li {
+  width: 175px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.CategArea span {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: orange;
+}
+
+.CategArea p {
+  font-size: 1.1rem;
+  font-weight: 200;
+  color: #555353;
+  opacity: 0.8;
+}
+
+.btn {
+  position: absolute;
+  bottom: -29px;
+  right: -29px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding: 15px;
+  border-radius: 5px;
+  border: none;
+  background-color: #d49115;
+  -webkit-box-shadow: 0px 0px 12px rgba(10, 10, 10, 0.4);
+          box-shadow: 0px 0px 12px rgba(10, 10, 10, 0.4);
+  cursor: pointer;
+  color: white;
+}
+
+.mealHeader {
+  position: relative;
+}
+
+.mealHeader .img {
+  width: 100%;
+  height: auto;
+}
+
+.mealHeader .random {
+  position: absolute;
+  top: 45px;
+  background-color: #fff;
+  padding: 0.5rem 0.5rem;
+  font-size: 1.5rem;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.mealBody {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1rem;
+}
+
+.mealBody h4 {
+  margin: 0;
+}
+
+.mealBody button {
+  border: none;
+  font-size: 1.4rem;
+  width: 29px;
+  height: 29px;
+  cursor: pointer;
+  background-color: transparent;
+  color: grey;
+}
+
+.mealBody button:active {
+  color: red;
+}
+
+.mealsContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 20px;
+  width: 100%;
+}
+
+.mealItems {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 20%;
+  height: 400px;
+  margin: 20px;
+  padding: 10px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 12px rgba(10, 10, 10, 0.4);
+          box-shadow: 0px 0px 12px rgba(10, 10, 10, 0.4);
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.mealItems:hover {
+  cursor: pointer;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  scale: 1.1;
+}
+
+.mealItems button {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.mealItems .heart {
+  font-size: 1.5rem;
+}
+
+.mealItems .heart:hover {
+  color: red;
+}
+
+.noSearch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 400px;
+  padding: 40px 0;
+  text-align: center;
+  font-size: 2.5rem;
+}
+/*# sourceMappingURL=Meal.module.css.map */

@@ -35,8 +35,18 @@ export default function Navbar ({user}){
   return (
 
      <div className={styles.container}>
-       {user.email}
-     <button className={styles.logout} onClick={logoutHandler}> Logout</button>
+       <div className={styles.head}>
+     
+       </div>
+       <div className={styles.head}>
+       <h1 className={styles.title}>Gr<span className={styles.red}>o</span>wceries</h1>
+       </div>
+       <div className={styles.head}>
+         <div className={styles.logArea}>
+        <p className={styles.userTitle}>Signed in as {user.email}</p> 
+        <button className={styles.logout} onClick={logoutHandler}> Logout</button>
+         </div>
+       </div>
       </div>
    
   )

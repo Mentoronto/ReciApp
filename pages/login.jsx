@@ -78,7 +78,7 @@ const SubmitHandlerLogin = async(e)=>{
           <FontAwesomeIcon icon={faAppleAlt} className={styles.apple} width={50} height={50} objectFit="contain" color="#e32f2f" />
           wceries
           </h1>
-        {reg ?(<Register setGoogleLogin={setGoogleLogin} setReg={setReg}/>):(
+        {reg ?(<Register setReg={setReg}/>):(
           <div className={styles.loginContainer}>
           <form onSubmit={SubmitHandlerLogin} className={styles.form}>
             <h1 className={styles.login}>Login</h1>

@@ -1,11 +1,66 @@
 .container{
-  background-color:rgb(13, 160, 45);
-  height: 100px;
-  padding: 0 50px;
+  height: 150px;
+  padding: 0 15px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: sticky;
+  background-color:rgb(116, 221, 235);
+  position: relative;
   top: 0;
   z-index: 99;
+  margin: 0;
+
+}
+
+.head{
+  flex: 1;
+}
+
+.apple{
+  width: 50px;
+  height: 50px;
+  margin-left: 100px;
+  cursor: pointer;      
+    animation: Jump 10.8s ;
+      
+      @keyframes Jump{
+        0%{transform: translateY(0px);}
+        50%{transform: translateY(-45px);}
+      }
+      animation-fill-mode: forwards;
+}
+.title{
+  display: flex;
+  font-size:4rem;
+  margin-left: 100px;
+  justify-content: center;
+  text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
+                 0px -5px 35px rgba(255,255,255,0.3);
+  .red{
+    color: rgb(238, 220, 56);
+  }
+}
+
+.logArea{
+  margin-top: -20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-right: 60px;
+
+  .userTitle{
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+  .logout{
+    cursor: pointer;
+    color: white;
+    background-color:black ;
+    border: none;
+    font-size: 1.2rem;
+    padding: 10px;
+    border-radius:5px;
+    box-shadow:0px 0px 12px rgba(10,10,10,0.4);
+    margin-right: 70px ;
+  }
 }

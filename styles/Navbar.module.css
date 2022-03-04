@@ -1,7 +1,6 @@
 .container {
-  background-color: #0da02d;
-  height: 100px;
-  padding: 0 50px;
+  height: 150px;
+  padding: 0 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11,9 +10,98 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  position: -webkit-sticky;
-  position: sticky;
+  background-color: #74ddeb;
+  position: relative;
   top: 0;
   z-index: 99;
+  margin: 0;
+}
+
+.head {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.apple {
+  width: 50px;
+  height: 50px;
+  margin-left: 100px;
+  cursor: pointer;
+  -webkit-animation: Jump 10.8s;
+          animation: Jump 10.8s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes Jump {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  50% {
+    -webkit-transform: translateY(-45px);
+            transform: translateY(-45px);
+  }
+}
+
+@keyframes Jump {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  50% {
+    -webkit-transform: translateY(-45px);
+            transform: translateY(-45px);
+  }
+}
+
+.title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 4rem;
+  margin-left: 100px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2), 0px -5px 35px rgba(255, 255, 255, 0.3);
+}
+
+.title .red {
+  color: #eedc38;
+}
+
+.logArea {
+  margin-top: -20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-right: 60px;
+}
+
+.logArea .userTitle {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.logArea .logout {
+  cursor: pointer;
+  color: white;
+  background-color: black;
+  border: none;
+  font-size: 1.2rem;
+  padding: 10px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 12px rgba(10, 10, 10, 0.4);
+          box-shadow: 0px 0px 12px rgba(10, 10, 10, 0.4);
+  margin-right: 70px;
 }
 /*# sourceMappingURL=Navbar.module.css.map */

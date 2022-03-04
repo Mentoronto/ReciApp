@@ -1,0 +1,152 @@
+.container {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 1385px;
+  background-color: rgba(173, 169, 169, 0.568);
+  position: absolute;
+  top: 0;
+  z-index: 999;
+}
+
+.wrapper {
+  width: auto;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10px 50px;
+  padding-bottom: 60px;
+  border-radius: 20px;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 500px;
+  width: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Instructions {
+  font-size: 1.1rem;
+  width: 550px;
+  height: 400px;
+  padding: 0;
+  margin-left: 40px;
+  overflow-y: auto;
+}
+
+.bottom {
+  font-size: 1.1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+
+.bottom .bottomLeft {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 0 40px 40px 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.bottom .bottomLeft h2 {
+  text-align: center;
+}
+
+.bottom .bottomLeft li {
+  margin-left: 38%;
+}
+
+.bottom .bottomRight {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bottom .bottomRight .CategArea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+}
+
+.bottom .bottomRight .CategArea span {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: orange;
+}
+
+.bottom .bottomRight .btn {
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding: 15px;
+  border-radius: 5px;
+  border: none;
+  background-color: #d49115;
+  -webkit-box-shadow: 0px 0px 12px rgba(10, 10, 10, 0.4);
+          box-shadow: 0px 0px 12px rgba(10, 10, 10, 0.4);
+  cursor: pointer;
+  color: white;
+}
+
+.close {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 40px;
+  height: 40px;
+  background-color: black;
+  border-radius: 100%;
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  color: white;
+  font-size: 1.2rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+/*# sourceMappingURL=RecipeWindow.module.css.map */
