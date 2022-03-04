@@ -11,7 +11,7 @@ import Image from 'next/image';
 import { parseCookies } from "nookies"
 import { toast } from "react-toastify";
 import { useSelector,useDispatch } from "react-redux";
-import { googleOn } from "./Redux/googleSlice";
+import { googleOn } from "../Redux/googleSlice";
 
 const Login = () => {
   const [email, setEmail] = useState('');
@@ -41,9 +41,9 @@ const SubmitHandlerLogin = async(e)=>{
           "Content-Type": "application/json",
         },
       }
-      
-      const {data} = await axios.post('https://recipe-app-ruddy.vercel.app/api/login', {email,password},config)
-      const res = await axios.post('https://recipe-app-ruddy.vercel.app/api/login', {email,password},config)
+      // https://recipe-app-ruddy.vercel.app
+      const {data} = await axios.post('/api/login', {email,password},config)
+      const res = await axios.post('/api/login', {email,password},config)
       res.status === (201) && router.push('/recipes/');
       
       toast.success(data.message)
