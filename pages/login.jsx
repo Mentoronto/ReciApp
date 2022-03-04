@@ -39,11 +39,12 @@ const SubmitHandlerLogin = async(e)=>{
       const config = {
         headers:{
           "Content-Type": "application/json",
+          // 'Access-Control-Allow-Origin':'*'
         },
       }
       // https://recipe-app-ruddy.vercel.app
-      const {data} = await axios.post('https://recipe-app-ruddy.vercel.app/api/login', {email,password},config)
-      const res = await axios.post('https://recipe-app-ruddy.vercel.app/api/login', {email,password},config)
+      const {data} = await axios.post('https://recipe-app-ruddy.vercel.app/api/login', {email,password},config);
+      const res = await axios.post('https://recipe-app-ruddy.vercel.app/api/login', {email,password},config);
       res.status === (201) && router.push('/recipes/');
       
       toast.success(data.message)
