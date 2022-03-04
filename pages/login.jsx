@@ -39,7 +39,6 @@ const SubmitHandlerLogin = async(e)=>{
       const config = {
         headers:{
           "Content-Type": "application/json",
-          // 'Access-Control-Allow-Origin':'*'
         },
       }
       // https://recipe-app-ruddy.vercel.app
