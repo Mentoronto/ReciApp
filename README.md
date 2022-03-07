@@ -1,6 +1,13 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Growceries
+This app allows the user to create an account and have a list of recipes to choose from that they can save. Each recipe shows the ingredients and a tutorial link to the website and/or Youtube link on how to cook that following meal. The user can also save any meals that they like and delete any meals that they dont.
+There is also a daily random meal generated to give the user a new meal that they can attempt to make as a way to keep the ooking at home fresh.
 
-## Getting Started
+### Overview
+- This Project is a Nextjs App paired with MongoDB and the Redux toolkit.
+- This app uses an external Api that stores users name,email and password associated with their account
+
+
+# Getting Started
 
 First, run the development server:
 
@@ -18,17 +25,20 @@ You can start editing the page by modifying `pages/index.js`. The page auto-upda
 
 The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-## Learn More
+## Contributing
 
-To learn more about Next.js, take a look at the following resources:
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Technologies
+- HTML,SCSS
+- Axios
+- Redux
+- mongoose
+- React Hooks
+- Next-Auth
+- Toastify
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+### LIVE VERSION
+[Checkout the apps live version](https://recipe-app-mentor.vercel.app/)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
