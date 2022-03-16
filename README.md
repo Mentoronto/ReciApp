@@ -1,6 +1,6 @@
 # Growceries
 This app allows the user to create an account and have a list of recipes to choose from that they can save. Each recipe shows the ingredients and a tutorial link to the website and/or Youtube link on how to cook that following meal. The user can also save any meals that they like and delete any meals that they dont.
-There is also a daily random meal generated to give the user a new meal that they can attempt to make as a way to keep the ooking at home fresh.
+There is also a daily random meal generated to give the user a new meal that they can attempt to make as a way to keep the cooking at home fresh.
 
 ### Overview
 - This Project is a Nextjs App paired with MongoDB and the Redux toolkit.
